@@ -12,7 +12,7 @@ app.use(cors());
 const { Server } = require("socket.io");
 const io = new Server(server,{
     cors: {
-        origin: "*",
+        origin: "https://public-chat-react.herokuapp.com",
       }
 });
 const PORT = 4000;
